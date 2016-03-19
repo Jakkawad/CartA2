@@ -12,6 +12,9 @@
 		313F3A9F1C9D7AD3003070AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313F3A9D1C9D7AD3003070AC /* Main.storyboard */; };
 		313F3AA11C9D7AD3003070AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 313F3AA01C9D7AD3003070AC /* Assets.xcassets */; };
 		313F3AA41C9D7AD3003070AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313F3AA21C9D7AD3003070AC /* LaunchScreen.storyboard */; };
+		313F3AAC1C9D7D3C003070AC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F3AAB1C9D7D3C003070AC /* CustomTableViewCell.swift */; };
+		313F3AB01C9D7ECC003070AC /* CartCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F3AAF1C9D7ECC003070AC /* CartCustomTableViewCell.swift */; };
+		313F3AB21C9D7F25003070AC /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F3AB11C9D7F25003070AC /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		313F3AA01C9D7AD3003070AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		313F3AA31C9D7AD3003070AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		313F3AA51C9D7AD3003070AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313F3AAB1C9D7D3C003070AC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		313F3AAF1C9D7ECC003070AC /* CartCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartCustomTableViewCell.swift; sourceTree = "<group>"; };
+		313F3AB11C9D7F25003070AC /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				313F3AA01C9D7AD3003070AC /* Assets.xcassets */,
 				313F3AA21C9D7AD3003070AC /* LaunchScreen.storyboard */,
 				313F3AA51C9D7AD3003070AC /* Info.plist */,
+				313F3AAB1C9D7D3C003070AC /* CustomTableViewCell.swift */,
+				313F3AAF1C9D7ECC003070AC /* CartCustomTableViewCell.swift */,
+				313F3AB11C9D7F25003070AC /* CartViewController.swift */,
 			);
 			path = CartA2;
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313F3AAC1C9D7D3C003070AC /* CustomTableViewCell.swift in Sources */,
 				313F3A9C1C9D7AD3003070AC /* ViewController.swift in Sources */,
+				313F3AB21C9D7F25003070AC /* CartViewController.swift in Sources */,
 				313F3A9A1C9D7AD3003070AC /* AppDelegate.swift in Sources */,
+				313F3AB01C9D7ECC003070AC /* CartCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

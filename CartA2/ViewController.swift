@@ -8,8 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var mainDataArray = ["Dog", "Cat", "Mouse", "Cow", "Fox", "Bird", "Pig"]
+    var Alert = UIAlertView()
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return 10
+        return self.mainDataArray.count
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell1 = tableView.dequeueReusableCellWithIdentifier("tableCell1") as? CustomTableViewCell
+        
+        cell1?.lblTitle.text = self.mainDataArray[indexPath.item]
+        
+        return cell1!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        Alert.title = "Add to Cart"
+        Alert.message = "\(self.mainDataArray[indexPath.item])"
+        Alert.addButtonWithTitle("OK")
+        Alert.show()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
