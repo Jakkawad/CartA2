@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var mainProductList: UITableView!
+    
     var mainDataArray = ["Dog", "Cat", "Mouse", "Cow", "Fox", "Bird", "Pig"]
     var Alert = UIAlertView()
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -29,6 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("Product is \(self.mainDataArray[indexPath.item])")
         Alert.title = "Add to Cart"
         Alert.message = "\(self.mainDataArray[indexPath.item])"
         Alert.addButtonWithTitle("OK")
@@ -37,6 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
